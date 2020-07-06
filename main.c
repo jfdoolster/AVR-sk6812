@@ -19,7 +19,7 @@ rgbw_color colors[LED_COUNT];
 int main()
 {
 
-	char color_name[30] = "green";
+	char color_name[30] = "white";
 
 
 
@@ -44,6 +44,10 @@ int main()
 			if (strcmp(color_name,"green") == 0)
 			{
 				colors[i] = (rgbw_color){0,255,0,0};
+			}
+			if (strcmp(color_name,"white") == 0)
+			{
+				colors[i] = (rgbw_color){0,0,0,255};
 			}
 		}
 
